@@ -1,0 +1,96 @@
+app-id: com.github.ocrmypdf.ocrmypdf
+runtime: org.freedesktop.Platform
+runtime-version: '24.08'
+sdk: org.freedesktop.Sdk
+command: ocrmypdf
+sdk-extensions:
+  - org.freedesktop.Sdk.Extension.rust-stable
+  - org.freedesktop.Sdk.Extension.llvm19
+build-options:
+  append-path: '/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm19/bin'
+  env:
+    CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_LINKER: clang
+    CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_RUSTFLAGS: '-C link-arg=-fuse-ld=/usr/lib/sdk/rust-stable/bin/mold'
+    CARGO_TARGET_AARCH64_UNKNOWN_LINUX_GNU_LINKER: clang
+    CARGO_TARGET_AARCH64_UNKNOWN_LINUX_GNU_RUSTFLAGS: '-C link-arg=-fuse-ld=/usr/lib/sdk/rust-stable/bin/mold'
+
+finish-args:
+  - --filesystem=home
+
+modules:
+  - name: leptonica
+    sources:
+      - type: archive
+        url: https://github.com/DanBloomberg/leptonica/releases/download/1.85.0/leptonica-1.85.0.tar.gz
+        sha256: 3745ae3bf271a6801a2292eead83ac926e3a9bc1bf622e9cd4dd0f3786e17205
+
+  - name: tesseract
+    config-opts:
+      - --disable-graphics
+    sources:
+      - type: archive
+        url: https://github.com/tesseract-ocr/tesseract/archive/refs/tags/5.5.0.tar.gz
+        sha256: f2fb34ca035b6d087a42875a35a7a5c4155fa9979c6132365b1e5a28ebc3fc11
+
+  - name: tessdata_fast
+    buildsystem: simple
+    build-commands:
+      - rm -rf ${FLATPAK_DEST}/share/tessdata
+      - mkdir -p ${FLATPAK_DEST}/share/tessdata
+      - cp -av * ${FLATPAK_DEST}/share/tessdata/
+    sources:
+      - type: git
+        url: https://github.com/tesseract-ocr/tessdata_fast
+        tag: 4.1.0
+        commit: 65727574dfcd264acbb0c3e07860e4e9e9b22185
+
+  - name: ghostscript
+    config-opts:
+      - "--disable-cups"
+    make-args:
+      - so
+    make-install-args:
+      - soinstall
+    post-install:
+      - "mv -f ${FLATPAK_DEST}/bin/{gsc,gs} "
+    cleanup:
+      - /share/ghostscript/*/doc/
+      - /share/ghostscript/*/examples
+    sources:
+      - type: archive
+        url: https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10040/ghostscript-10.04.0.tar.gz
+        sha256: c764dfbb7b13fc71a7a05c634e014f9bb1fb83b899fe39efc0b6c3522a9998b1
+
+  - name: jbig2enc
+    sources:
+      # - type: archive
+      #   url: https://github.com/agl/jbig2enc/archive/refs/tags/0.29.tar.gz
+      #   sha256: bfcf0d0448ee36046af6c776c7271cd5a644855723f0a832d1c0db4de3c21280
+      - type: git
+        url: https://github.com/agl/jbig2enc.git
+        commit: fefa59179285747f5197ae25596d5e5fb2e4d949
+        # necessary to build with leptonica >= 1.83
+
+  - name: pngquant
+    sources:
+      - type: archive
+        url: http://pngquant.org/pngquant-2.18.0-src.tar.gz
+        sha256: e72194b52b36f040deaec49a1ddd5dcd8d4feecc3a5fe6c5e9589a9707b233d4
+        # v3.x requires cargo to build -> todo
+
+  - python3-sphinx.json
+
+  - name: unpaper
+    buildsystem: meson
+    sources:
+      - type: archive
+        url: https://github.com/unpaper/unpaper/releases/download/unpaper-7.0.0/unpaper-7.0.0.tar.xz
+        sha256: 2575fbbf26c22719d1cb882b59602c9900c7f747118ac130883f63419be46a80
+
+  - flatpak-module-qpdf-pikepdf/pikepdf.yaml
+  - python3-setuptools_rust.json
+  - python3-maturin.json
+  - python3-cryptography.json
+  - python3-hatchling.json
+  - python3-pygments.json
+  - python3-ocrmypdf.json
