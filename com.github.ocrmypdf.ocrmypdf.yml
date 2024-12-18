@@ -72,11 +72,20 @@ modules:
         # necessary to build with leptonica >= 1.83
 
   - name: pngquant
+    buildsystem: simple
+    build-commands:
+      - cargo --offline fetch --manifest-path Cargo.toml --verbose
+      - cargo --offline build --release --verbose
+      - install -Dm 755 target/release/pngquant -t /app/bin
+    build-options:
+      append-path: /usr/lib/sdk/rust-stable/bin
+      env:
+        CARGO_HOME: /run/build/pngquant/cargo
     sources:
-      - type: archive
-        url: http://pngquant.org/pngquant-2.18.0-src.tar.gz
-        sha256: e72194b52b36f040deaec49a1ddd5dcd8d4feecc3a5fe6c5e9589a9707b233d4
-        # v3.x requires cargo to build -> TODO
+      - type: git
+        url: 'https://github.com/kornelski/pngquant.git'
+        tag: "3.0.3"
+      - pngquant-sources.json # pngquant does not ship a Cargo.lock file, needs to be generated and converted
 
   - python3-sphinx.json # needed to build unpaper
 
