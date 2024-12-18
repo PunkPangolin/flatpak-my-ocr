@@ -32,7 +32,7 @@ modules:
         url: https://github.com/tesseract-ocr/tesseract/archive/refs/tags/5.5.0.tar.gz
         sha256: f2fb34ca035b6d087a42875a35a7a5c4155fa9979c6132365b1e5a28ebc3fc11
 
-  - name: tessdata_fast
+  - name: tessdata_fast # downloads all -> TODO: choose languages
     buildsystem: simple
     build-commands:
       - rm -rf ${FLATPAK_DEST}/share/tessdata
@@ -76,9 +76,9 @@ modules:
       - type: archive
         url: http://pngquant.org/pngquant-2.18.0-src.tar.gz
         sha256: e72194b52b36f040deaec49a1ddd5dcd8d4feecc3a5fe6c5e9589a9707b233d4
-        # v3.x requires cargo to build -> todo
+        # v3.x requires cargo to build -> TODO
 
-  - python3-sphinx.json
+  - python3-sphinx.json # needed to build unpaper
 
   - name: unpaper
     buildsystem: meson
@@ -88,9 +88,11 @@ modules:
         sha256: 2575fbbf26c22719d1cb882b59602c9900c7f747118ac130883f63419be46a80
 
   - flatpak-module-qpdf-pikepdf/pikepdf.yaml
-  - python3-setuptools_rust.json
-  - python3-maturin.json
-  - python3-cryptography.json
-  - python3-hatchling.json
-  - python3-pygments.json
+
+  # TODO: organize these python modules, figure out how to deal with rust dependencies
+  - python3-setuptools_rust.json # needed to build maturin and cryptography
+  - python3-maturin.json # needed to package some of the python packages, add cargo manually
+  - python3-cryptography.json # add cargo manually
+  - python3-hatchling.json # dep of pygments
+  - python3-pygments.json # part of Sdk but not of runtime, have to add manually
   - python3-ocrmypdf.json
