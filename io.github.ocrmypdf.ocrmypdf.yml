@@ -20,17 +20,25 @@ finish-args:
 modules:
   - name: leptonica
     sources:
-      - type: archive
-        url: https://github.com/DanBloomberg/leptonica/releases/download/1.85.0/leptonica-1.85.0.tar.gz
-        sha256: 3745ae3bf271a6801a2292eead83ac926e3a9bc1bf622e9cd4dd0f3786e17205
+      - type: git
+        url: https://github.com/DanBloomberg/leptonica.git
+        tag: 1.85.0
+        commit: 63aef18d98432b8582a1565e241f7bd2ee9cc8d9
+        x-checker-data:
+          - type: git
+            tag-pattern: ^([\\d.]+)$
 
   - name: tesseract
     config-opts:
       - --disable-graphics
     sources:
-      - type: archive
-        url: https://github.com/tesseract-ocr/tesseract/archive/refs/tags/5.5.0.tar.gz
-        sha256: f2fb34ca035b6d087a42875a35a7a5c4155fa9979c6132365b1e5a28ebc3fc11
+      - type: git
+        url: https://github.com/tesseract-ocr/tesseract.git
+        tag: 5.5.0
+        commit: 64eab6c457b2337dd690746a5fde5c222b40d5f8
+        x-checker-data:
+          - type: git
+            tag-pattern: ^([\\d.]+)$
 
   - name: tessdata_fast # downloads all -> TODO: choose languages
     buildsystem: simple
@@ -57,19 +65,23 @@ modules:
       - /share/ghostscript/*/doc/
       - /share/ghostscript/*/examples
     sources:
-      - type: archive
-        url: https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10040/ghostscript-10.04.0.tar.gz
-        sha256: c764dfbb7b13fc71a7a05c634e014f9bb1fb83b899fe39efc0b6c3522a9998b1
+      - type: git
+        url: https://github.com/ArtifexSoftware/ghostpdl-downloads.git
+        tag: gs10040
+        commit: 08ae03dc175313a85e8cc053610d10321724e1f2
+        x-checker-data:
+          - type: git
+            tag-pattern: ^gs([\\d]+)$
 
   - name: jbig2enc
     sources:
-      # - type: archive
-      #   url: https://github.com/agl/jbig2enc/archive/refs/tags/0.29.tar.gz
-      #   sha256: bfcf0d0448ee36046af6c776c7271cd5a644855723f0a832d1c0db4de3c21280
       - type: git
         url: https://github.com/agl/jbig2enc.git
-        commit: fefa59179285747f5197ae25596d5e5fb2e4d949
-        # necessary to build with leptonica >= 1.83
+        tag: 0.30
+        commit: cbca93f49921e6702f61031b6717575237636815
+        x-checker-data:
+          - type: git
+            tag-pattern: ^([\\d.]+)$
 
   - name: pngquant
     buildsystem: simple
@@ -83,8 +95,12 @@ modules:
         CARGO_HOME: /run/build/pngquant/cargo
     sources:
       - type: git
-        url: 'https://github.com/kornelski/pngquant.git'
-        tag: "3.0.3"
+        url: https://github.com/kornelski/pngquant.git
+        tag: 3.0.3
+        commit: 53a332a58f44357b6b41842a54d74aa1e245913d
+        x-checker-data:
+          - type: git
+            tag-pattern: ^([\\d.]+)$
       - cargo-sources-pngquant.json # pngquant does not ship a Cargo.lock file, needs to be generated and converted
 
   - python3-sphinx.yml # needed to build unpaper
@@ -92,9 +108,13 @@ modules:
   - name: unpaper
     buildsystem: meson
     sources:
-      - type: archive
-        url: https://github.com/unpaper/unpaper/releases/download/unpaper-7.0.0/unpaper-7.0.0.tar.xz
-        sha256: 2575fbbf26c22719d1cb882b59602c9900c7f747118ac130883f63419be46a80
+      - type: git
+        url: https://github.com/unpaper/unpaper.git
+        tag: unpaper-7.0.0
+        commit: 5211a623d48858eae154213a61bccbc368b19ca0
+        x-checker-data:
+          - type: git
+            tag-pattern: ^(unpaper-[\\d.]+)$
 
   - flatpak-module-qpdf-pikepdf/pikepdf.yaml
 
