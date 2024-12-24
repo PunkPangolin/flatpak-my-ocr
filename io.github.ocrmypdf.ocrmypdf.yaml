@@ -26,7 +26,7 @@ modules:
         commit: 63aef18d98432b8582a1565e241f7bd2ee9cc8d9
         x-checker-data:
           - type: git
-            tag-pattern: ^([\\d.]+)$
+            tag-pattern: ^([\d.]+)$
 
   - name: tesseract
     config-opts:
@@ -38,7 +38,7 @@ modules:
         commit: 64eab6c457b2337dd690746a5fde5c222b40d5f8
         x-checker-data:
           - type: git
-            tag-pattern: ^([\\d.]+)$
+            tag-pattern: ^([\d.]+)$
 
   - name: tessdata_fast # downloads all -> TODO: choose languages
     buildsystem: simple
@@ -65,7 +65,7 @@ modules:
         commit: df8f4966577fff70320be2eb33cb55eb15d05d52
         x-checker-data:
           - type: git
-            tag-pattern: ^(ghostpdl-[\\d.]+)$
+            tag-pattern: ^(ghostpdl-[\d.]+)$
 
   - name: jbig2enc
     sources:
@@ -75,7 +75,7 @@ modules:
         commit: cbca93f49921e6702f61031b6717575237636815
         x-checker-data:
           - type: git
-            tag-pattern: ^([\\d.]+)$
+            tag-pattern: ^([\d.]+)$
 
   - name: pngquant
     buildsystem: simple
@@ -94,7 +94,7 @@ modules:
         commit: 53a332a58f44357b6b41842a54d74aa1e245913d
         x-checker-data:
           - type: git
-            tag-pattern: ^([\\d.]+)$
+            tag-pattern: ^([\d.]+)$
       - cargo-sources/cargo-sources-pngquant.json # pngquant does not ship a Cargo.lock file, needs to be generated and converted
 
   - name: unpaper
@@ -106,7 +106,7 @@ modules:
         commit: 5211a623d48858eae154213a61bccbc368b19ca0
         x-checker-data:
           - type: git
-            tag-pattern: ^(unpaper-[\\d.]+)$
+            tag-pattern: ^(unpaper-[\d.]+)$
     modules:
       - python3-modules/python3-sphinx.yaml
 
