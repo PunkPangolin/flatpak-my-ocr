@@ -1,18 +1,18 @@
 app-id: io.github.ocrmypdf.ocrmypdf
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: "24.08"
 sdk: org.freedesktop.Sdk
 command: ocrmypdf
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
   - org.freedesktop.Sdk.Extension.llvm19
 build-options:
-  append-path: '/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm19/bin'
+  append-path: "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm19/bin"
   env:
     CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_LINKER: clang
-    CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_RUSTFLAGS: '-C link-arg=-fuse-ld=/usr/lib/sdk/rust-stable/bin/mold'
+    CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_RUSTFLAGS: "-C link-arg=-fuse-ld=/usr/lib/sdk/rust-stable/bin/mold"
     CARGO_TARGET_AARCH64_UNKNOWN_LINUX_GNU_LINKER: clang
-    CARGO_TARGET_AARCH64_UNKNOWN_LINUX_GNU_RUSTFLAGS: '-C link-arg=-fuse-ld=/usr/lib/sdk/rust-stable/bin/mold'
+    CARGO_TARGET_AARCH64_UNKNOWN_LINUX_GNU_RUSTFLAGS: "-C link-arg=-fuse-ld=/usr/lib/sdk/rust-stable/bin/mold"
 
 finish-args:
   - --filesystem=home
@@ -97,8 +97,6 @@ modules:
             tag-pattern: ^([\\d.]+)$
       - cargo-sources/cargo-sources-pngquant.json # pngquant does not ship a Cargo.lock file, needs to be generated and converted
 
-  - python3-modules/python3-sphinx.yaml # needed to build unpaper
-
   - name: unpaper
     buildsystem: meson
     sources:
@@ -109,13 +107,15 @@ modules:
         x-checker-data:
           - type: git
             tag-pattern: ^(unpaper-[\\d.]+)$
+    modules:
+      - python3-modules/python3-sphinx.yaml
 
   - flatpak-module-qpdf-pikepdf/pikepdf.yaml
 
-  # TODO: organize these python modules, figure out how to deal with rust dependencies
-  - python3-modules/python3-setuptools_rust.yaml # needed to build maturin and cryptography
-  - python3-modules/python3-maturin.yaml # needed to package some of the python packages, add cargo manually
-  - python3-modules/python3-cryptography.yaml # add cargo manually
-  - python3-modules/python3-hatchling.yaml # dep of pygments
-  - python3-modules/python3-pygments.yaml # part of Sdk but not of runtime, have to add manually
+  - name: ocrmypdf
+    modules: # TODO restructure this
+      - python3-modules/python3-setuptools_rust.yaml # needed to build maturin and cryptography
+      - python3-modules/python3-maturin.yaml # add cargo manually
+      - python3-modules/python3-cryptography.yaml # add cargo manually
+      - python3-modules/python3-pygments.yaml # part of Sdk but not of runtime, add manually. Also needs hatchling.
   - python3-modules/python3-ocrmypdf.yaml
