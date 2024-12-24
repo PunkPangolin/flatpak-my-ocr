@@ -85,9 +85,9 @@ modules:
       - type: git
         url: 'https://github.com/kornelski/pngquant.git'
         tag: "3.0.3"
-      - pngquant-sources.json # pngquant does not ship a Cargo.lock file, needs to be generated and converted
+      - cargo-sources-pngquant.json # pngquant does not ship a Cargo.lock file, needs to be generated and converted
 
-  - python3-sphinx.json # needed to build unpaper
+  - python3-sphinx.yml # needed to build unpaper
 
   - name: unpaper
     buildsystem: meson
@@ -99,9 +99,9 @@ modules:
   - flatpak-module-qpdf-pikepdf/pikepdf.yaml
 
   # TODO: organize these python modules, figure out how to deal with rust dependencies
-  - python3-setuptools_rust.json # needed to build maturin and cryptography
-  - python3-maturin.json # needed to package some of the python packages, add cargo manually
-  - python3-cryptography.json # add cargo manually
-  - python3-hatchling.json # dep of pygments
-  - python3-pygments.json # part of Sdk but not of runtime, have to add manually
-  - python3-ocrmypdf.json
+  - python3-setuptools_rust.yml # needed to build maturin and cryptography
+  - python3-maturin.yml # needed to package some of the python packages, add cargo manually
+  - python3-cryptography.yml # add cargo manually
+  - python3-hatchling.yml # dep of pygments
+  - python3-pygments.yml # part of Sdk but not of runtime, have to add manually
+  - python3-ocrmypdf.yml
