@@ -2,6 +2,7 @@ name: python3-cryptography
 buildsystem: simple
 build-commands: []
 modules:
+  - name: python3-hatchling
     buildsystem: simple
     build-commands:
       - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
