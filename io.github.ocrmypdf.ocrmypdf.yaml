@@ -55,23 +55,17 @@ modules:
   - name: ghostscript
     config-opts:
       - "--disable-cups"
-    make-args:
-      - so
-    make-install-args:
-      - soinstall
-    post-install:
-      - "mv -f ${FLATPAK_DEST}/bin/{gsc,gs} "
     cleanup:
       - /share/ghostscript/*/doc/
       - /share/ghostscript/*/examples
     sources:
       - type: git
-        url: https://github.com/ArtifexSoftware/ghostpdl-downloads.git
-        tag: gs10040
-        commit: 08ae03dc175313a85e8cc053610d10321724e1f2
+        url: git://git.ghostscript.com/ghostpdl.git
+        tag: ghostpdl-10.04.0
+        commit: df8f4966577fff70320be2eb33cb55eb15d05d52
         x-checker-data:
           - type: git
-            tag-pattern: ^gs([\\d]+)$
+            tag-pattern: ^(ghostpdl-[\\d.]+)$
 
   - name: jbig2enc
     sources:
@@ -101,9 +95,9 @@ modules:
         x-checker-data:
           - type: git
             tag-pattern: ^([\\d.]+)$
-      - cargo-sources-pngquant.json # pngquant does not ship a Cargo.lock file, needs to be generated and converted
+      - cargo-sources/cargo-sources-pngquant.json # pngquant does not ship a Cargo.lock file, needs to be generated and converted
 
-  - python3-sphinx.yml # needed to build unpaper
+  - python3-modules/python3-sphinx.yaml # needed to build unpaper
 
   - name: unpaper
     buildsystem: meson
@@ -119,9 +113,9 @@ modules:
   - flatpak-module-qpdf-pikepdf/pikepdf.yaml
 
   # TODO: organize these python modules, figure out how to deal with rust dependencies
-  - python3-setuptools_rust.yml # needed to build maturin and cryptography
-  - python3-maturin.yml # needed to package some of the python packages, add cargo manually
-  - python3-cryptography.yml # add cargo manually
-  - python3-hatchling.yml # dep of pygments
-  - python3-pygments.yml # part of Sdk but not of runtime, have to add manually
-  - python3-ocrmypdf.yml
+  - python3-modules/python3-setuptools_rust.yaml # needed to build maturin and cryptography
+  - python3-modules/python3-maturin.yaml # needed to package some of the python packages, add cargo manually
+  - python3-modules/python3-cryptography.yaml # add cargo manually
+  - python3-modules/python3-hatchling.yaml # dep of pygments
+  - python3-modules/python3-pygments.yaml # part of Sdk but not of runtime, have to add manually
+  - python3-modules/python3-ocrmypdf.yaml
