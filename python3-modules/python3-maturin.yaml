@@ -12,8 +12,8 @@ build-commands:
     --prefix=${FLATPAK_DEST} "maturin" --no-build-isolation
 sources:
   - type: file
-    url: https://files.pythonhosted.org/packages/ab/1e/085ddc0e5b08ae7af7a743a0dd6ed06b22a1332288488f1a333137885150/maturin-1.7.8.tar.gz
-    sha256: 649c6ef3f0fa4c5f596140d761dc5a4d577c485cc32fb5b9b344a8280352880d
+    url: https://files.pythonhosted.org/packages/b0/f3/776ae3234473b63f9427dcf7fee2e69fe3c1eedae242ab9d1f3e7c25ec59/maturin-1.8.0.tar.gz
+    sha256: 2f4abdf33e87ccb0d035a838e832945c6f7374222eacde508fafc752dda8ba6e
     x-checker-data:
       name: maturin
       type: pypi
