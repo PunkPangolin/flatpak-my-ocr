@@ -24,7 +24,6 @@ modules:
 
   - name: python3-cryptography
     build-options:
-      append-path: /usr/lib/sdk/rust-stable/bin
       env:
         CARGO_HOME: /run/build/python3-cryptography/cargo
         CARGO_NET_OFFLINE: 'true'
