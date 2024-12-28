@@ -88,7 +88,7 @@ modules:
         x-checker-data:
           - type: git
             tag-pattern: ^([\d.]+)$
-      - cargo-sources/cargo-sources-pngquant.json # pngquant does not ship a Cargo.lock file, needs to be generated and converted
+      - cargo-sources-pngquant.json # pngquant does not ship a Cargo.lock file, needs to be generated and converted
 
   - name: unpaper
     buildsystem: meson
@@ -101,14 +101,12 @@ modules:
           - type: git
             tag-pattern: ^(unpaper-[\d.]+)$
     modules:
-      - python3-modules/python3-sphinx.yaml
+      - python3-sphinx.yaml
 
   - flatpak-module-qpdf-pikepdf/pikepdf.yaml
 
-  - name: ocrmypdf
-    modules: # TODO restructure this
-      - python3-modules/python3-setuptools_rust.yaml # needed to build maturin and cryptography
-      - python3-modules/python3-maturin.yaml # add cargo manually
-      - python3-modules/python3-cryptography.yaml # add cargo manually
-      - python3-modules/python3-pygments.yaml # part of Sdk but not of runtime, add manually. Also needs hatchling.
-  - python3-modules/python3-ocrmypdf.yaml
+  # Contains ocrmypdf and dependencies
+  # setuptools_rust maturin cffi cryptography hatchling pygments ocrmypdf
+  # add cargo env and cargo sources for maturin and cryptography
+  # add pygments (left out by flatpak-pip-generator because it is part of the Sdk)
+  - python3-ocrmypdf.yaml
