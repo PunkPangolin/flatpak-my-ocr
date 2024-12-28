@@ -26,7 +26,6 @@ modules:
     build-options:
       env:
         CARGO_HOME: /run/build/python3-cryptography/cargo
-        CARGO_NET_OFFLINE: 'true'
     buildsystem: simple
     build-commands:
       - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
