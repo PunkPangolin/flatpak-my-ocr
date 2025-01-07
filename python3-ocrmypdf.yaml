@@ -115,8 +115,8 @@ modules:
           packagetype: bdist_wheel
           type: pypi
       - type: file
-        url: https://files.pythonhosted.org/packages/35/35/5055ab8d215af853d07bbff1a74edf48f91ed308f037380a5ca52dd73348/trove_classifiers-2024.10.21.16-py3-none-any.whl
-        sha256: 0fb11f1e995a757807a8ef1c03829fbd4998d817319abcef1f33165750f103be
+        url: https://files.pythonhosted.org/packages/cb/1f/3216fd02c2949d3311033788b3fcfdde15fc804b719e1bae3a5570f0b7cf/trove_classifiers-2025.1.6.15-py3-none-any.whl
+        sha256: cd8e14d53158c72b68f7adcd119e3b4c7271d282999d3a8ec7486733a6202e4d
         x-checker-data:
           name: trove_classifiers
           packagetype: bdist_wheel
@@ -188,8 +188,8 @@ modules:
           packagetype: bdist_wheel
           type: pypi
       - type: file
-        url: https://files.pythonhosted.org/packages/08/11/7aeab13740325a00a4b61fae6fe208aa6eac9f58bd0fb6dec1ce8af9469a/ocrmypdf-16.7.0-py3-none-any.whl
-        sha256: 1090f4c45e4fa84b2f7ff0f856899d51a2e8f44c1b9dde615efc4e8110099d61
+        url: https://files.pythonhosted.org/packages/12/52/7a15cd735604362a7efe91f4da78fd013ac5c5bb08436022e38f2be78723/ocrmypdf-16.8.0-py3-none-any.whl
+        sha256: 28b7437a571610717de54d3074eaa3456721a6ea54c05cc15ad8301fdfdd4392
         x-checker-data:
           name: ocrmypdf
           packagetype: bdist_wheel
@@ -209,14 +209,14 @@ modules:
           name: pi_heif
           type: pypi
       - type: file
-        url: https://files.pythonhosted.org/packages/57/54/71552c3ab2694618741e5579506759238716664400304cb615917a993df5/pikepdf-9.4.2.tar.gz
-        sha256: 0108c063bc56dc2dbfc87f20533a728342a938f4c85e39773866b71255aa8388
+        url: https://files.pythonhosted.org/packages/6f/9b/a03b9dd92c44779bfd189bd78ddb3357f53ca0100618e5f1d4b1650220a5/pikepdf-9.5.1.tar.gz
+        sha256: dccdab8c176956ab049bf527cf4f47b4f678ac77d65659cc2575a27e3965ce3f
         x-checker-data:
           name: pikepdf
           type: pypi
       - type: file
-        url: https://files.pythonhosted.org/packages/a5/26/0d95c04c868f6bdb0c447e3ee2de5564411845e36a858cfd63766bc7b563/pillow-11.0.0.tar.gz
-        sha256: 72bacbaf24ac003fea9bff9837d1eedb6088758d41e100c1552930151f677739
+        url: https://files.pythonhosted.org/packages/f3/af/c097e544e7bd278333db77933e535098c259609c4eb3b85381109602fb5b/pillow-11.1.0.tar.gz
+        sha256: 368da70808b36d73b4b390a8ffac11069f8a5c85f29eff1f1b01bcf3ef5b2a20
         x-checker-data:
           name: pillow
           type: pypi
