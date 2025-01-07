@@ -49,6 +49,8 @@ modules:
   - name: ghostscript
     config-opts:
       - "--disable-cups"
+      - "--disable-dbus"
+      - "--disable-gtk"
     cleanup:
       - /share/ghostscript/*/doc/
       - /share/ghostscript/*/examples
