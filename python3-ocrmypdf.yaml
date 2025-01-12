@@ -115,8 +115,8 @@ modules:
           packagetype: bdist_wheel
           type: pypi
       - type: file
-        url: https://files.pythonhosted.org/packages/cb/1f/3216fd02c2949d3311033788b3fcfdde15fc804b719e1bae3a5570f0b7cf/trove_classifiers-2025.1.6.15-py3-none-any.whl
-        sha256: cd8e14d53158c72b68f7adcd119e3b4c7271d282999d3a8ec7486733a6202e4d
+        url: https://files.pythonhosted.org/packages/67/54/dcb9a4f9a8b3187f79a9f250cb457682a49ad536a02ac59ff4e1edbc9eeb/trove_classifiers-2025.1.10.15-py3-none-any.whl
+        sha256: 9824eb16f7df1b1cc1c217c52ce56c76869d6263da2067f8eadc45122a731cfc
         x-checker-data:
           name: trove_classifiers
           packagetype: bdist_wheel
@@ -230,8 +230,8 @@ modules:
           packagetype: bdist_wheel
           type: pypi
       - type: file
-        url: https://files.pythonhosted.org/packages/24/a1/fc03dca9b0432725c2e8cdbf91a349d2194cf03d8523c124faebe581de09/wrapt-1.17.0.tar.gz
-        sha256: 16187aa2317c731170a88ef35e8937ae0f533c402872c1ee5e6d079fcf320801
+        url: https://files.pythonhosted.org/packages/c8/dd/35c573cc2b4b8d65ea96bba0247d05710f284857d30e2266d1874f1c727d/wrapt-1.17.1.tar.gz
+        sha256: 16b2fdfa09a74a3930175b6d9d7d008022aa72a4f02de2b3eecafcc1adfd3cfe
         x-checker-data:
           name: wrapt
           type: pypi
