@@ -125,7 +125,7 @@ modules:
     buildsystem: simple
     build-commands:
       - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
-        --prefix=${FLATPAK_DEST} "pygments==2.18.0" --no-build-isolation --ignore-installed
+        --prefix=${FLATPAK_DEST} "pygments" --no-build-isolation --ignore-installed
     sources:
       - type: file
         url: https://files.pythonhosted.org/packages/7c/2d/c3338d48ea6cc0feb8446d8e6937e1408088a72a39937982cc6111d17f84/pygments-2.19.1.tar.gz
