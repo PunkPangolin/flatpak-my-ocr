@@ -155,6 +155,7 @@
         "python3-modules/python3-cffi.json",
         "python3-modules/python3-cryptography.json",
         "python3-modules/python3-requirements.json",
+        "python3-modules/python3-pygments.json",
         {
             "name": "ocrmypdf",
             "buildsystem": "simple",
