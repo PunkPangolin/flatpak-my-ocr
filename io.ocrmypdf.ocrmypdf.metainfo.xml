@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="console-application">
-  <id>io.github.ocrmypdf.ocrmypdf</id>
+  <id>io.ocrmypdf.ocrmypdf</id>
 
   <name>OCRmyPDF</name>
   <summary>OCRmyPDF adds an OCR text layer to scanned PDF files, allowing them to be searched</summary>
 
-  <developer id="io.github.jbarlow83">
-      <name>James R. Barlow</name>
+  <developer id="io.ocrmypdf">
+      <name>OCRmyPDF Developers</name>
   </developer>
 
   <url type="homepage">https://github.com/ocrmypdf/ocrmypdf</url>
