@@ -1,14 +1,24 @@
-# flatpak-my-ocr
+# OCRmyPDF Flatpak Maintenance Documentation
 
-Flatpak build manifest for ocrmypdf. ~~This is just a private project, but someone might find it interesting. As far as I know, Flathub does not accept non-GUI programs, but you can build and run the flatpak manually.~~ Intended to be upstreamed someday.
+## TODO metainfo.xml
 
-Beware: Everything here is chaotic. Use at your own risk!
+Will be part of upstream in the next tag (probably 16.9.0), replace file with `src/ocrympdf/data/io.ocrmypdf.ocrmypdf.xml` in manifest and remove the file from the GitHub repository.
 
-### Information regarding python modules
+## flatpak-external-data-checker and updates
 
-Everything generated with `flapak-pip-generator` and organized to make maintenance easy.
+Checks every module for updates, but will only raise a PR when `ocrmypdf` gets an update. This PR will include all updates available at this point.
 
-`python3-sphinx`is required to build `pngquant`
+`pngquant`, `python3-maturin` and `python3-cryptography` are built using rust and will require new, manually generated `cargo-sources-${module}.json` files when updated.
+
+## pikepdf
+
+Utilizes a submodule for the pikepdf manifest. `dependabot` is configured to check for updates daily.
+
+## python modules
+
+Everything was generated with `flapak-pip-generator` and is organized in this structure to make maintenance easy. All python modules use `noarch` wheels (where available) or are built from source.
+
+`python3-sphinx`is required to build documentation of `pngquant`
 
 `python3-setuptools_rust` is required to build `python3-maturin`
 
