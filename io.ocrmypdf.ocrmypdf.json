@@ -146,16 +146,11 @@
                 }
             ],
             "modules": [
-                "python3-modules/python3-sphinx.json"
+                "python3-sphinx.json"
             ]
         },
         "flatpak-module-qpdf-pikepdf/pikepdf.yaml",
-        "python3-modules/python3-setuptools_rust.json",
-        "python3-modules/python3-maturin.json",
-        "python3-modules/python3-cffi.json",
-        "python3-modules/python3-cryptography.json",
-        "python3-modules/python3-requirements.json",
-        "python3-modules/python3-pygments.json",
+        "python3-requirements.json",
         {
             "name": "ocrmypdf",
             "buildsystem": "simple",

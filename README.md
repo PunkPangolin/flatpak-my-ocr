@@ -8,7 +8,9 @@ Will be part of upstream in the next tag (probably 16.9.0), replace file with `s
 
 Checks every module for updates, but will only raise a PR when `ocrmypdf` gets an update. This PR will include all updates available at this point.
 
-`pngquant`, `python3-maturin` and `python3-cryptography` are built using rust and will require new, manually generated `cargo-sources-${module}.json` files when updated.
+`pngquant` is built using rust and will require new, manually generated `cargo-sources-pngquant.json` when updated.
+
+`cryptography`(dep of `pdfminer.six`) installs arch-dependend wheels and has to be updated manually.
 
 ## pikepdf
 
@@ -16,19 +18,9 @@ Utilizes a submodule for the pikepdf manifest. `dependabot` is configured to che
 
 ## python modules
 
-Everything was generated with `flapak-pip-generator` and is organized in this structure to make maintenance easy. All python modules use `noarch` wheels (where available) or are built from source.
+Everything was generated with `flapak-pip-generator` and is organized in this structure to make maintenance easy. All python modules (beside `cryptography`) use `noarch` wheels (where available) or are built from source.
 
 `python3-sphinx`is required to build documentation of `pngquant`
-
-`python3-setuptools_rust` is required to build `python3-maturin`
-
-`python3-maturin` is required to build `python3-cryptography`, is built with cargo and requires manual work
-
-`python3-cffi` is required to build `python3-cryptography`
-
-`python3-cryptography`is built with cargo, is built with cargo and requires manual work
-
-`python3-pygments` is a runtime dependency of ocrmypdf and has to be added manually, because it gets skipped by `flatpak-pip-generator`
 
 `python3-requirements.json` includes the following packages:
 
@@ -42,4 +34,9 @@ Pillow
 pluggy
 rich
 hatch-vcs
+pygments
 ```
+
+`cryptography`(dep of `pdfminer.six`) uses arch-dependend wheels. Building from source requires manual work because of cargo sources, and the python dependencies `setuptools-rust` and `maturin` (also built with cargo). This might be changed to source builds later, but it is probably not worth it.
+
+`pygments`has to be added manually and with `--ignore-installed` flag, because it is part of the Sdk (but not of the runtime) and gets skipped otherwise.
