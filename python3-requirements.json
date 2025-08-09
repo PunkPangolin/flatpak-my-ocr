@@ -245,8 +245,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/e4/33/89c2ced2b67d1c2a61c19c6751aa8902d46ce3dacb23600a283619f5a12d/charset_normalizer-3.4.2.tar.gz",
-                    "sha256": "5baececa9ecba31eff645232d59845c07aa030f0c81ee70184a90d35099a0e63",
+                    "url": "https://files.pythonhosted.org/packages/83/2d/5fd176ceb9b2fc619e63405525573493ca23441330fcdaee6bef9460e924/charset_normalizer-3.4.3.tar.gz",
+                    "sha256": "6fce4b8500244f6fcb71465d4a4930d132ba9ab8e71a7859e6a5d59851068d14",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "charset_normalizer"
@@ -254,19 +254,35 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/c9/d8/0749f7d39f53f8258e5c18a93131919ac465ee1f9dccaf1b3f420235e0b5/cryptography-45.0.5-cp311-abi3-manylinux_2_34_x86_64.whl",
-                    "sha256": "ad0caded895a00261a5b4aa9af828baede54638754b51955a0ac75576b831b27",
+                    "url": "https://files.pythonhosted.org/packages/7d/fe/ffb12c2d83d0ee625f124880a1f023b5878f79da92e64c37962bbbe35f3f/cryptography-45.0.6-cp311-abi3-manylinux_2_34_x86_64.whl",
+                    "sha256": "f4028f29a9f38a2025abedb2e409973709c660d44319c61762202206ed577c42",
                     "only-arches": [
                         "x86_64"
-                    ]
+                    ],
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://pypi.org/pypi/cryptography/json",
+                        "version-query": ".info.version",
+                        "url-query": ".releases | .[$version][] | select(.filename==\"cryptography-\" + $version + \"-cp311-abi3-manylinux_2_34_x86_64.whl\") | .url",
+                        "name": "cryptography",
+                        "packagetype": "bdist_wheel"
+                    }
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/d9/9d/44080674dee514dbb82b21d6fa5d1055368f208304e2ab1828d85c9de8f4/cryptography-45.0.5-cp311-abi3-manylinux_2_34_aarch64.whl",
-                    "sha256": "d05a38884db2ba215218745f0781775806bde4f32e07b135348355fe8e4991d9",
+                    "url": "https://files.pythonhosted.org/packages/fd/80/1bc3634d45ddfed0871bfba52cf8f1ad724761662a0c792b97a951fb1b30/cryptography-45.0.6-cp311-abi3-manylinux_2_34_aarch64.whl",
+                    "sha256": "275ba5cc0d9e320cd70f8e7b96d9e59903c815ca579ab96c1e37278d231fc402",
                     "only-arches": [
                         "aarch64"
-                    ]
+                    ],
+                    "x-checker-data": {
+                        "type": "json",
+                        "url": "https://pypi.org/pypi/cryptography/json",
+                        "version-query": ".info.version",
+                        "url-query": ".releases | .[$version][] | select(.filename==\"cryptography-\" + $version + \"-cp311-abi3-manylinux_2_34_aarch64.whl\") | .url",
+                        "name": "cryptography",
+                        "packagetype": "bdist_wheel"
+                    }
                 },
                 {
                     "type": "file",
@@ -299,8 +315,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/7a/5c/12198f6c7d40eb62dd9196635bba12c5d46f910dba650bd761acbaf73b64/pi_heif-1.0.0.tar.gz",
-                    "sha256": "beb5233436245a2a129515ee0fecdab022812673d372a7511137aa4fbabb069d",
+                    "url": "https://files.pythonhosted.org/packages/a1/3c/15d70bac37e50bd03ca2cdf7f7237d237c6f4e3e6d6cefdcc95b53dd708e/pi_heif-1.1.0.tar.gz",
+                    "sha256": "bac501008a000f2c560086d82e785e3ca2fc688b24b66c1d7dae537ef2fd6a6e",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "pi_heif"
@@ -462,8 +478,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/92/ef/c6deb083748be3bcad6f471b6ae983950c161890bf5ae1b2af80cc56c530/trove_classifiers-2025.5.9.12-py3-none-any.whl",
-                    "sha256": "e381c05537adac78881c8fa345fd0e9970159f4e4a04fcc42cfd3129cca640ce",
+                    "url": "https://files.pythonhosted.org/packages/d5/44/323a87d78f04d5329092aada803af3612dd004a64b69ba8b13046601a8c9/trove_classifiers-2025.8.6.13-py3-none-any.whl",
+                    "sha256": "c4e7fc83012770d80b3ae95816111c32b085716374dccee0d3fbf5c235495f9f",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "trove_classifiers",
