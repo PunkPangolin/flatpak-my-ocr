@@ -60,7 +60,10 @@
             "x-checker-data": {
                 "type": "pypi",
                 "name": "docutils",
-                "packagetype": "bdist_wheel"
+                "packagetype": "bdist_wheel",
+                "versions": {
+                    "<": "0.22"
+                }
             }
         },
         {
