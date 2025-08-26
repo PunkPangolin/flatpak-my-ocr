@@ -30,8 +30,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/41/9c/85f50a5476832c3efc67b6d7997808388236ae4754bf53e1749b3bc27577/pybind11-3.0.0-py3-none-any.whl",
-                    "sha256": "7c5cac504da5a701b5163f0e6a7ba736c713a096a5378383c5b4b064b753f607",
+                    "url": "https://files.pythonhosted.org/packages/cd/8a/37362fc2b949d5f733a8b0f2ff51ba423914cabefe69f1d1b6aab710f5fe/pybind11-3.0.1-py3-none-any.whl",
+                    "sha256": "aa8f0aa6e0a94d3b64adfc38f560f33f15e589be2175e103c0a33c6bce55ee89",
                     "x-checker-data": {
                         "name": "pybind11",
                         "packagetype": "bdist_wheel",
@@ -478,8 +478,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/d5/44/323a87d78f04d5329092aada803af3612dd004a64b69ba8b13046601a8c9/trove_classifiers-2025.8.6.13-py3-none-any.whl",
-                    "sha256": "c4e7fc83012770d80b3ae95816111c32b085716374dccee0d3fbf5c235495f9f",
+                    "url": "https://files.pythonhosted.org/packages/4a/40/d54944eeb5646fb4b1c98d4601fe5e0812dd2e7c0aa94d53fc46457effc8/trove_classifiers-2025.8.26.11-py3-none-any.whl",
+                    "sha256": "887fb0a402bdbecd4415a52c06e6728f8bdaa506a7143372d2b893e2c5e2d859",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "trove_classifiers",
