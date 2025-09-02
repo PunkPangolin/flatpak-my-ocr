@@ -1,7 +1,7 @@
 {
     "app-id": "io.ocrmypdf.ocrmypdf",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "24.08",
+    "runtime-version": "25.08",
     "sdk": "org.freedesktop.Sdk",
     "command": "ocrmypdf",
     "sdk-extensions": [
@@ -66,6 +66,9 @@
         },
         {
             "name": "ghostscript",
+            "build-options": {
+                "cflags": "-std=gnu17"
+            },
             "config-opts": [
                 "--disable-cups",
                 "--disable-dbus",
