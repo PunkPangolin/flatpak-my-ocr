@@ -236,8 +236,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/fc/97/c783634659c2920c3fc70419e3af40972dbaf758daa229a7d6ea6135c90d/cffi-1.17.1.tar.gz",
-                    "sha256": "1c39c6016c32bc48dd54561950ebd6836e1670f2ae46128f67cf49e789c52824",
+                    "url": "https://files.pythonhosted.org/packages/eb/56/b1ba7935a17738ae8453301356628e8147c79dbb825bcbc73dc7401f9846/cffi-2.0.0.tar.gz",
+                    "sha256": "44d1b5909021139fe36001ae048dbdde8214afa20200eda0f64c068cac5d5529",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "cffi"
@@ -296,8 +296,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/13/a3/a812df4e2dd5696d1f351d58b8fe16a405b234ad2886a0dab9183fb78109/pycparser-2.22-py3-none-any.whl",
-                    "sha256": "c3702b6d3dd8c7abc1afa565d7e63d53a1d0bd86cdc24edd75470f4de499cfcc",
+                    "url": "https://files.pythonhosted.org/packages/a0/e3/59cd50310fc9b59512193629e1984c1f95e5c8ae6e5d8c69532ccc65a7fe/pycparser-2.23-py3-none-any.whl",
+                    "sha256": "e5c6e8d3fbad53479cab09ac03729e0a9faf2bee3db8208a550daf5af81a5934",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "pycparser",
@@ -478,8 +478,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/4a/40/d54944eeb5646fb4b1c98d4601fe5e0812dd2e7c0aa94d53fc46457effc8/trove_classifiers-2025.8.26.11-py3-none-any.whl",
-                    "sha256": "887fb0a402bdbecd4415a52c06e6728f8bdaa506a7143372d2b893e2c5e2d859",
+                    "url": "https://files.pythonhosted.org/packages/15/05/618f6a55cced5402364af0d7629cbfd04e9852d464193bde9bd03c85b56a/trove_classifiers-2025.9.9.12-py3-none-any.whl",
+                    "sha256": "d449bd9d4715105657732d6dd1f46aa1595278d01ef1716ca164b35867135a4f",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "trove_classifiers",

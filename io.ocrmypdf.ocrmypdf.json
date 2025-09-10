@@ -82,8 +82,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/ArtifexSoftware/ghostpdl.git",
-                    "tag": "ghostpdl-10.05.1",
-                    "commit": "7f64bc848f6b67ae204182e6e088eec110061490",
+                    "tag": "ghostpdl-10.06.0",
+                    "commit": "2d6e764c1f4a73520ed6de6dd3fa78ad30cd6a63",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^(ghostpdl-[\\d.]+)$"
