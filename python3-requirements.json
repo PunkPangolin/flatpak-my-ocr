@@ -78,8 +78,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/34/a8/0a6c5a135b5e4c39ab42ad1e068335eb6e9ec08bd458f6c5299a915b8e1f/pikepdf-9.10.2.tar.gz",
-                    "sha256": "f62fc2183888f2ca1d271bf4faa440a2e2d0159221620a9c6a314f9c9a95680c",
+                    "url": "https://files.pythonhosted.org/packages/f5/4c/62b37a3ee301c245be6ad269ca771c2c5298bf049366e1094cfdf80d850c/pikepdf-9.11.0.tar.gz",
+                    "sha256": "5ad6bffba08849c21eee273ba0b6fcd4b6a9cff81bcbca6988f87a765ba62163",
                     "x-checker-data": {
                         "name": "pikepdf",
                         "type": "pypi"
@@ -181,8 +181,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/34/a8/0a6c5a135b5e4c39ab42ad1e068335eb6e9ec08bd458f6c5299a915b8e1f/pikepdf-9.10.2.tar.gz",
-                    "sha256": "f62fc2183888f2ca1d271bf4faa440a2e2d0159221620a9c6a314f9c9a95680c",
+                    "url": "https://files.pythonhosted.org/packages/f5/4c/62b37a3ee301c245be6ad269ca771c2c5298bf049366e1094cfdf80d850c/pikepdf-9.11.0.tar.gz",
+                    "sha256": "5ad6bffba08849c21eee273ba0b6fcd4b6a9cff81bcbca6988f87a765ba62163",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "pikepdf"
@@ -478,8 +478,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/15/05/618f6a55cced5402364af0d7629cbfd04e9852d464193bde9bd03c85b56a/trove_classifiers-2025.9.9.12-py3-none-any.whl",
-                    "sha256": "d449bd9d4715105657732d6dd1f46aa1595278d01ef1716ca164b35867135a4f",
+                    "url": "https://files.pythonhosted.org/packages/e1/85/a4ff8758c66f1fc32aa5e9a145908394bf9cf1c79ffd1113cfdeb77e74e4/trove_classifiers-2025.9.11.17-py3-none-any.whl",
+                    "sha256": "5d392f2d244deb1866556457d6f3516792124a23d1c3a463a2e8668a5d1c15dd",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "trove_classifiers",
