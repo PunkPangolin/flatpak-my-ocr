@@ -20,8 +20,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/DanBloomberg/leptonica.git",
-                    "tag": "1.85.0",
-                    "commit": "63aef18d98432b8582a1565e241f7bd2ee9cc8d9",
+                    "tag": "1.86.0",
+                    "commit": "dbb48b0fd0e10e943ecd9bab7439701842894733",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
