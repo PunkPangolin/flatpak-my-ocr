@@ -254,8 +254,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/89/6b/09c30543bb93401f6f88fce556b3bdbb21e55ae14912c04b7bf355f5f96c/cryptography-46.0.1-cp311-abi3-manylinux_2_34_x86_64.whl",
-                    "sha256": "449ef2b321bec7d97ef2c944173275ebdab78f3abdd005400cc409e27cd159ab",
+                    "url": "https://files.pythonhosted.org/packages/55/1d/42fda47b0111834b49e31590ae14fd020594d5e4dadd639bce89ad790fba/cryptography-46.0.2-cp311-abi3-manylinux_2_34_x86_64.whl",
+                    "sha256": "be939b99d4e091eec9a2bcf41aaf8f351f312cd19ff74b5c83480f08a8a43e0b",
                     "only-arches": [
                         "x86_64"
                     ],
@@ -270,8 +270,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/dc/1f/dbd4d6570d84748439237a7478d124ee0134bf166ad129267b7ed8ea6d22/cryptography-46.0.1-cp311-abi3-manylinux_2_34_aarch64.whl",
-                    "sha256": "9e8776dac9e660c22241b6587fae51a67b4b0147daa4d176b172c3ff768ad736",
+                    "url": "https://files.pythonhosted.org/packages/86/96/4302af40b23ab8aa360862251fb8fc450b2a06ff24bc5e261c2007f27014/cryptography-46.0.2-cp311-abi3-manylinux_2_34_aarch64.whl",
+                    "sha256": "1e3b6428a3d56043bff0bb85b41c535734204e599c1c0977e1d0f261b02f3ad5",
                     "only-arches": [
                         "aarch64"
                     ],
@@ -315,8 +315,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/a1/3c/15d70bac37e50bd03ca2cdf7f7237d237c6f4e3e6d6cefdcc95b53dd708e/pi_heif-1.1.0.tar.gz",
-                    "sha256": "bac501008a000f2c560086d82e785e3ca2fc688b24b66c1d7dae537ef2fd6a6e",
+                    "url": "https://files.pythonhosted.org/packages/bf/7b/7c7b2aeb4995906725f13b885884d5b22e4f2d55028e8941555d2789e5e7/pi_heif-1.1.1.tar.gz",
+                    "sha256": "42ece7c3b40569f295fd4d2b10f38d1cd5012ca548446a2ca33895f0d6900c4f",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "pi_heif"
