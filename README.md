@@ -6,7 +6,7 @@
 
 ## python modules
 
-`python3-sphinx`is required to build documentation of `pngquant`
+`python3-sphinx`is required to build documentation of `unpaper` (cannot be disabled)
 
 `sphinx 8.2.3` does not work with `docutils 0.22`, needs `pygments` added manually
 
