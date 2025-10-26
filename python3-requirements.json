@@ -78,8 +78,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/f5/4c/62b37a3ee301c245be6ad269ca771c2c5298bf049366e1094cfdf80d850c/pikepdf-9.11.0.tar.gz",
-                    "sha256": "5ad6bffba08849c21eee273ba0b6fcd4b6a9cff81bcbca6988f87a765ba62163",
+                    "url": "https://files.pythonhosted.org/packages/d3/1c/c8c8c53d5f2b1e3e9c9a12ff3442aafd5b368ffb167b03c8328da608d72e/pikepdf-10.0.0.tar.gz",
+                    "sha256": "f1396843aae147328bf221b778725636a1cf33080a46a583b1d18fbb0ca2bcd3",
                     "x-checker-data": {
                         "name": "pikepdf",
                         "type": "pypi"
@@ -184,8 +184,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/f5/4c/62b37a3ee301c245be6ad269ca771c2c5298bf049366e1094cfdf80d850c/pikepdf-9.11.0.tar.gz",
-                    "sha256": "5ad6bffba08849c21eee273ba0b6fcd4b6a9cff81bcbca6988f87a765ba62163",
+                    "url": "https://files.pythonhosted.org/packages/d3/1c/c8c8c53d5f2b1e3e9c9a12ff3442aafd5b368ffb167b03c8328da608d72e/pikepdf-10.0.0.tar.gz",
+                    "sha256": "f1396843aae147328bf221b778725636a1cf33080a46a583b1d18fbb0ca2bcd3",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "pikepdf"
