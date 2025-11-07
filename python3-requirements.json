@@ -153,11 +153,12 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/8e/97/ca44c467131b93fda82d2a2f21b738c8bcf63b5259e3b8250e928b8dd52a/img2pdf-0.6.3.tar.gz",
-                    "sha256": "219518020f5bd242bdc46493941ea3f756f664c2e86f2454721e74353f58cd95",
+                    "url": "https://files.pythonhosted.org/packages/4d/dc/91e3a4a11c25ae183bd5a71b84ecb298db76405ff70013f76b10877bdfe3/img2pdf-0.6.3-py3-none-any.whl",
+                    "sha256": "44d12d235752edd17c43c04ff39952cdc5dd4c6aba90569c4902bd445085266b",
                     "x-checker-data": {
                         "type": "pypi",
-                        "name": "img2pdf"
+                        "name": "img2pdf",
+                        "packagetype": "bdist_wheel"
                     }
                 },
                 {
