@@ -184,8 +184,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/ocrmypdf/OCRmyPDF.git",
-                    "tag": "v16.11.1",
-                    "commit": "f181307e5026366818c443b36bd3b5c5c46b508a",
+                    "tag": "v16.12.0",
+                    "commit": "54ce09496c5b1c8067bcf797f12793257b20ad12",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"

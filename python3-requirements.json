@@ -78,8 +78,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/d3/1c/c8c8c53d5f2b1e3e9c9a12ff3442aafd5b368ffb167b03c8328da608d72e/pikepdf-10.0.0.tar.gz",
-                    "sha256": "f1396843aae147328bf221b778725636a1cf33080a46a583b1d18fbb0ca2bcd3",
+                    "url": "https://files.pythonhosted.org/packages/f7/79/9a63d5ccac66ace679cf93c84894db15074fe849d41cd39232cb09ec8819/pikepdf-10.0.2.tar.gz",
+                    "sha256": "7c85a2526253e35575edb2e28cdc740d004be4b7c5fda954f0e721ee1c423a52",
                     "x-checker-data": {
                         "name": "pikepdf",
                         "type": "pypi"
@@ -182,8 +182,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/d3/1c/c8c8c53d5f2b1e3e9c9a12ff3442aafd5b368ffb167b03c8328da608d72e/pikepdf-10.0.0.tar.gz",
-                    "sha256": "f1396843aae147328bf221b778725636a1cf33080a46a583b1d18fbb0ca2bcd3",
+                    "url": "https://files.pythonhosted.org/packages/f7/79/9a63d5ccac66ace679cf93c84894db15074fe849d41cd39232cb09ec8819/pikepdf-10.0.2.tar.gz",
+                    "sha256": "7c85a2526253e35575edb2e28cdc740d004be4b7c5fda954f0e721ee1c423a52",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "pikepdf"
@@ -287,8 +287,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/73/16/7a432c0101fa87457e75cb12c879e1749c5870a786525e2e0f42871d6462/pdfminer_six-20250506-py3-none-any.whl",
-                    "sha256": "d81ad173f62e5f841b53a8ba63af1a4a355933cfc0ffabd608e568b9193909e3",
+                    "url": "https://files.pythonhosted.org/packages/64/29/d1d9f6b900191288b77613ddefb73ed35b48fb35e44aaf8b01b0422b759d/pdfminer_six-20251107-py3-none-any.whl",
+                    "sha256": "c09df33e4cbe6b26b2a79248a4ffcccafaa5c5d39c9fff0e6e81567f165b5401",
                     "x-checker-data": {
                         "type": "pypi",
                         "name": "pdfminer.six",
